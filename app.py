@@ -15,7 +15,8 @@ except Exception:
     st.error("Hugging Face API key not found. Please add it to `.streamlit/secrets.toml`.")
     st.stop()
 
-API_URL = "https://api-inference.huggingface.co/models/distilbert/distilbert-base-uncased-finetuned-sst-2-english"
+API_URL = "https://api-inference.huggingface.co/models/nlptown/bert-base-multilingual-uncased-sentiment"
+
 headers = {"Authorization": f"Bearer {hf_api_key}"}
 
 def query_huggingface(text):
